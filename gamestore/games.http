@@ -1,0 +1,34 @@
+GET http://localhost:5187/games
+
+###
+
+GET http://localhogroupst:5187/games/4
+
+###
+
+POST http://localhost:5187/games
+Content-Type: application/json
+
+{
+    "genere" : "Sandbox",
+    "price" : 19.99,
+    "releaseDate" : "2011-11-18"
+}
+
+###
+
+PUT http://localhost:5187/games/5
+Content-Type:  application/json
+
+{
+  "name": "Fifa 23",
+  "genere": "Sport",
+  "price": 15.99,
+  "releaseDate": "2022-07-15"
+}
+
+###
+
+DELETE http://localhost:5187/games/1
+
+
